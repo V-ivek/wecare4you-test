@@ -4,12 +4,12 @@ from flask import Flask,request, url_for, redirect, render_template
 
 app = Flask(__name__)
 
-model_DT = joblib.load('models/CHOLERA_DT.pkl')
-model_GB = joblib.load('models/CHOLERA_GB.pkl')
-model_KNN = joblib.load('models/CHOLERA_KNN.pkl')
-model_LR = joblib.load('models/CHOLERA_LR.pkl')
-model_RFC = joblib.load('models/CHOLERA_RFC.pkl')
-model_SVM = joblib.load('models/CHOLERA_SVM.pkl')
+model_DT = joblib.load('./models/CHOLERA_DT.pkl')
+model_GB = joblib.load('./models/CHOLERA_GB.pkl')
+model_KNN = joblib.load('./models/CHOLERA_KNN.pkl')
+model_LR = joblib.load('./models/CHOLERA_LR.pkl')
+model_RFC = joblib.load('./models/CHOLERA_RFC.pkl')
+model_SVM = joblib.load('./models/CHOLERA_SVM.pkl')
 
 @app.route('/')
 def hello_world():
